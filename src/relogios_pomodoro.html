@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+FOCO - Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">+FOCO</div>
+        </div>
+
+        <!-- Página de seleção de timer -->
+        <div class="selection-page" id="selectionPage">
+            <div class="subtitle">Escolha o seu Timer:</div>
+            
+            <div class="timer-options">
+                <button class="timer-card" onclick="iniciarPomodoro(25, 5)">
+                    <svg class="timer-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="13" r="9"/>
+                        <path d="M12 7v6l4 2"/>
+                        <path d="M8 2h8"/>
+                    </svg>
+                    <div class="timer-label">Relógio<br>Rápido</div>
+                    <div class="timer-duration">25/5</div>
+                </button>
+
+                <button class="timer-card" onclick="iniciarPomodoro(50, 10)">
+                    <svg class="timer-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="13" r="9"/>
+                        <path d="M12 7v6l4 2"/>
+                        <path d="M8 2h8"/>
+                    </svg>
+                    <div class="timer-label">Relógio<br>Longo Prazo</div>
+                    <div class="timer-duration">50/10</div>
+                </button>
+            </div>
+
+            <div class="footer">
+                <button class="footer-button" onclick="window.location.href='index.html'">Voltar</button>
+                <span class="copyright">Copyright +Foco</span>
+                <button class="footer-button" onclick="sair()">Menu</button>
+            </div>
+        </div>
+
+        <!-- Página do timer ativo -->
+        <div class="timer-page" id="timerPage">
+            <div class="subtitle" style="margin-bottom: 15px;">Saldo: <span id="saldo">${saldoAtual}</span></div>
+            
+            <div class="timer-display">
+                <div class="timer-time" id="timerDisplay">25:00</div>
+                <svg class="timer-display-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="13" r="9"/>
+                    <path d="M12 7v6l4 2"/>
+                    <path d="M8 2h8"/>
+                    <circle cx="12" cy="13" r="2" fill="#5a8070"/>
+                </svg>
+            </div>
+
+            <div class="controls">
+                <button class="control-button pause-button" id="pauseButton" onclick="pausarTimer()">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="6" y="4" width="4" height="16"/>
+                        <rect x="14" y="4" width="4" height="16"/>
+                    </svg>
+                </button>
+                <button class="control-button play-button" id="playButton" onclick="iniciarTimer()" style="display: none;">
+                    <svg viewBox="0 0 24 24">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="timer-status" id="timerStatus">
+                5 min de Descanso...
+            </div>
+
+            <div class="points-earned" id="pointsEarned" style="display: none;">
+                +10 pontos ganhos! 🎉
+            </div>
+
+            <div class="footer">
+                <button class="footer-button" onclick="voltarSelecao()">Voltar</button>
+                <span class="copyright">Copyright +Foco</span>
+                <button class="footer-button" onclick="sair()">Menu</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

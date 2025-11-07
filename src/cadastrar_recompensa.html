@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+FOCO - Recompensas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">+FOCO</div>
+            <div class="saldo">Saldo Atual: <span id="saldo">${saldoAtual}</span></div>
+            <div class="subtitle">Decida e Resgate as suas<br>Recompensas</div>
+        </div>
+
+        <div class="recompensas-list" id="recompensasList">
+            <div class="recompensa-card empty-slot" data-status="vazia">
+                <div class="icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3" />
+                        <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" />
+                        <path d="M12 2L9 8h6z" />
+                    </svg>
+                </div>
+                <div class="recompensa-content">
+                    <input type="text" class="recompensa-input" placeholder="Nova Recompensa" maxlength="30">
+                    <input type="number" class="valor-input" placeholder="0" min="1" max="999">
+                </div>
+                <button class="action-button check-button" onclick="cadastrarRecompensa(this)">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="recompensa-card empty-slot" data-status="vazia">
+                <div class="icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3" />
+                        <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" />
+                        <path d="M12 2L9 8h6z" />
+                    </svg>
+                </div>
+                <div class="recompensa-content">
+                    <input type="text" class="recompensa-input" placeholder="Nova Recompensa" maxlength="30">
+                    <input type="number" class="valor-input" placeholder="0" min="1" max="999">
+                </div>
+                <button class="action-button check-button" onclick="cadastrarRecompensa(this)">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="recompensa-card empty-slot" data-status="vazia">
+                <div class="icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3" />
+                        <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" />
+                        <path d="M12 2L9 8h6z" />
+                    </svg>
+                </div>
+                <div class="recompensa-content">
+                    <input type="text" class="recompensa-input" placeholder="Nova Recompensa" maxlength="30">
+                    <input type="number" class="valor-input" placeholder="0" min="1" max="999">
+                </div>
+                <button class="action-button check-button" onclick="cadastrarRecompensa(this)">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="instruction">
+            Clique no <strong>+</strong> para Criar,<br><strong>CheckMark</strong> para Resgatar<br>e no <strong>X</strong> para Excluir
+        </div>
+
+        <div class="footer">
+            <button class="footer-button" onclick="window.location.href='index.html'">Voltar</button>
+            <span class="copyright">Copyright +Foco</span>
+            <button class="footer-button" onclick="sair()">Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

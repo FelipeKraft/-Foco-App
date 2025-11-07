@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+FOCO - Sobre Nós</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container sobre-nos">
+        <div class="header">
+            <div class="logo">+FOCO</div>
+            <div class="subtitle">Sobre Nós</div>
+        </div>
+
+        <!-- Página 1 -->
+        <div class="page active" id="page1">
+            <div class="content-card">
+                <div class="content-text">
+                    <p><strong>Projeto Idealizado e Realizado por Alunos da Universidade UniLaSalle – RJ</strong></p>
+                    <p>Visando a Conscientização Sobre a Problemática do Respeito do Tempo Gasto Inerente ao Uso Excessivo de Telas de Aparelhos Eletrônicos, Através de Recursos como Monitoramento em Tempo Real, Alertas Personalizáveis e Metas de Uso. A Aplicação Visa Promover a Saúde Digital e Fazer Ajustes de Forma Prática e Intuitiva Dentro do Nosso App.</p>
+                    <p>Nosso App pode te Auxiliar Caso Você Esteja Tendo Problemas Como Déficits Cognitivos e Prejuízo na Memória, Distúrbios do Sono, Problemas Visuais, Aumento de Ansiedade, Estresse e Depressão. Entretanto, Recomendamos Ir a Um Médico Para Receber o Devido Encaminhamento.</p>
+                    <p><strong>A Seguir Temos Os Detalhes Sobre Os Malefícios do Uso Excessivo de Telas:</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página 2 -->
+        <div class="page" id="page2">
+            <div class="content-card">
+                <div class="content-text">
+                    <p><strong>Uma Pesquisa Feita em 2023 Pelo Jornal da USP</strong></p>
+                    <p>Aponta que a População Brasileira Geral Passa, em Média, 56,6% do Dia, ou Seja, Cerca de Nove Horas em Frente às Telas. Esses Indivíduos Relataram Maior Frequência de Sintomas de Transtornos e Dificuldade em Executar Atividades Diárias Básicas. Alguns dos Sintomas Associados ao Excesso de Telas São:</p>
+                    <ul class="bullet-list">
+                        <li><strong>Déficits Cognitivos</strong> – Diminuição da Memória, Dificuldade de Concentração e Prejuízo na Capacidade de Planejar e Tomar Decisões.</li>
+                        <li><strong>Distúrbios do Sono</strong> – A luz azul das Telas Atrapalha a Sono, Atrasando o Descanso e o Desempenho no Dia Seguinte.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page" id="page3">
+            <div class="content-card">
+                <div class="content-text">
+                    <ul class="bullet-list">
+                        <li><strong>Problemas Emocionais</strong> – Aumento da Ansiedade, Estresse e Sintomas de Depressão, Principalmente Pelo Uso Excessivo de Redes Sociais.</li>
+                        <li><strong>Danos à Visão</strong> – Fadiga Ocular, Olhos Secos, Visão Turva e Dores de Cabeça, Caracterizando a Síndrome da Visão de Computador.</li>
+                        <li><strong>Sedentarismo e Dores Físicas</strong> – Postura Inadequada e Falta de Movimento Levam a Dores Musculares e Problemas Ortopédicos.</li>
+                        <li><strong>Prejuízos no Desenvolvimento Infantil</strong> – Atrasos na Linguagem, Dificuldades Sociais, Emocionais e Aumento do Risco de TDAH em Crianças.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-indicator" id="pageIndicator">Página 1 de 3</div>
+
+        <div class="navigation">
+            <button class="nav-button" id="prevButton" onclick="mudarPagina(-1)">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="nav-button" id="nextButton" onclick="mudarPagina(1)">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="footer">
+            <button class="footer-button" onclick="window.location.href='index.html'">Voltar</button>
+            <span class="copyright">Copyright +Foco</span>
+            <button class="footer-button" onclick="sair()">Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

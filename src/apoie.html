@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+FOCO - Apoie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">+FOCO</div>
+            <div class="subtitle">Apoie</div>
+            
+            <button class="pix-button" onclick="copiarPix()">
+                <span class="pix-text">PIX</span>
+                <svg class="copy-icon" viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="qr-code-container">
+            <!--<div class="qr-placeholder">QR CODE PIX</div>-->
+            <img src="imgpix.jpg" width="110%">
+        </div>
+
+        <button class="assistir-button" onclick="assistirAD()">Assistir AD</button>
+
+        <div class="footer">
+            <button class="footer-button" onclick="window.location.href='index.html'">Voltar</button>
+            <span class="copyright">Copyright +Foco</span>
+            <button class="footer-button" onclick="sair()">Menu</button>
+        </div>
+    </div>
+
+    <!-- Toast de notificação -->
+    <div class="toast" id="toast">Chave PIX copiada! ✓</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
