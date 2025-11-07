@@ -1,6 +1,10 @@
 # +FOCO 🎯
 
-Aplicativo de produtividade com técnica Pomodoro e sistema de recompensas.
+Aplicativo de produtividade com técnica Pomodoro e sistema de recompensas. Criado por:
+
+Felipe Mitraud Kraft, 
+Enzo Carvalho Martins, 
+Lucas Moraes Bittencourt Recarey Veiga
 
 ## 📥 Download
 
