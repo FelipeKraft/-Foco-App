@@ -24,7 +24,7 @@ Baixe a versão mais recente na aba [Releases](../../releases)
 3. Cadastre suas recompensas
 4. Resgate suas recompensas com os pontos ganhos
 
-## 🛠️ Desenvolvimento
+## 🛠️ Desenvolvimento PRÓPRIO
 ```bash
 # Instalar dependências
 npm install
