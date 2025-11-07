@@ -40,7 +40,9 @@ MIT License - veja LICENSE para mais detalhes
 
 ## 👥 Autores
 
-Projeto desenvolvido por alunos da Universidade UniLaSalle – RJ, Curso de Sistemas de Informação
+Projeto desenvolvido por alunos da Universidade UniLaSalle – RJ, Curso de Sistemas de Informação: 
+
+
 Felipe Mitraud Kraft, 
 Enzo Carvalho Martins, 
 Lucas Moraes Bittencourt Recarey Veiga
