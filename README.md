@@ -41,12 +41,13 @@ npm run build:linux  # Linux
 ## 📝 Licença
 
 MIT License - veja LICENSE para mais detalhes
+- Ainda não é Licenciado
 
 ## 👥 Autores
 
 Projeto desenvolvido por alunos da Universidade UniLaSalle – RJ, Curso de Sistemas de Informação: 
 
 
-Felipe Mitraud Kraft, 
-Enzo Carvalho Martins, 
-Lucas Moraes Bittencourt Recarey Veiga
+Felipe Mitraud Kraft (Desenvolvedor Principal), 
+Enzo Carvalho Martins (Criador e Desenvolvedor Secundário), 
+Lucas Moraes Bittencourt Recarey Veiga (Documentador e Auxiliador)
